@@ -1,0 +1,84 @@
+<!DOCtype html>					<!--声明文档类型 -->
+<html lang='EN'>				<!--根标签：lang规定翻译的语言-->
+	<head>						<!--网页头部-->
+		<meta charset='UTF-8'/>	<!--规定字符编码：UTF-8国际编码-->
+		<meta name="Author" content="">			<!--作者-->
+		<meta name="Keywords" content="">		<!--关键词：给搜索引擎用的-->
+		<meta name="Description" content="">	<!--网站概述：给搜索引擎用的-->
+		<title>案例三：护肤产品列表</title>							<!--网页标题-->
+		<style>
+			*{margin:0;padding:0;}
+			html{}
+			body{
+				font: 12px/1.5 Arial, 'Microsoft Yahei', 宋体, sans-serif;	
+			}
+			img{border:none;}
+			#wrap{width:1160px;margin:50px auto;padding:10px;border:1px solid #ccc;}
+			#wrap .nav{text-align:center;padding:25px 0;}
+			#wrap .nav a{
+				text-decoration:none;
+				padding:0 25px;
+				border-right:1px solid #ccc;
+				color:#555;
+			}
+			#wrap .nav .last{border:none;}
+			#wrap .nav a:hover{color:red;}
+			ul#img-wrap{list-style:none;margin:auto;height:499px;}
+			ul#img-wrap:after{content:'';display:block;clear:both;}
+			ul#img-wrap li{float:left;height:499px;border-right:1px solid #f1e3e8}
+			ul#img-wrap .list1{width:319px;}
+			ul#img-wrap .list2{width:228px;}
+			ul#img-wrap .list3{width:208px;}
+			ul#img-wrap .list4{width:400px;border:none;margin-right:0;}
+			ul#img-wrap li .bor-R1{border-right:1px solid #f1e3e8;}
+			ul#img-wrap li .bor-B1{border-bottom:1px solid #f1e3e8;}
+			ul#img-wrap li .fl-L{float:left;}
+			ul#img-wrap li .fl-R{float:right;}
+			ul#img-wrap .list4 .clearfix:after{content:'';display:block;clear:both;} 
+		
+		</style>
+
+	</head>
+	<body>										<!--网页主体-->
+		<div id='wrap'>
+			<div class='nav'>
+				<a href='#' title='护肤'>护肤</a>
+				<a href='#' title='彩妆'>彩妆</a>
+				<a href='#' title='美发'>美发</a>
+				<a href='#' title='美体'>美体</a>	
+				<a href='#' title='香氛'>香氛</a>
+				<a href='#' title='肌肤'>肌肤</a>
+				<a href='#' title='产品'>产品</a>
+				<a href='#' title='唇部'>唇部</a>
+				<a href='#' title='精华'>精华</a>
+				<a class='last' href='#' title='修护'>修护</a>
+		
+			</div>
+			<ul id='img-wrap'>
+				<li class='list1'>
+					<img width='100%' src='images/demo3/1.jpg' alt='护肤'/>
+				</li>
+				<li class='list2'>
+					<img class='bor-B1' width='100%' src='images/demo3/2.jpg' alt='护肤'/>
+					<img width='100%' src='images/demo3/3.jpg' alt='护肤'/>
+				
+				</li>
+				<li class='list3'>
+					<img class='bor-B1' width='100%' src='images/demo3/4.jpg' alt='护肤'/>
+					<img class='bor-B1' width='100%' src='images/demo3/5.jpg' alt='护肤'/>
+					<img width='100%' src='images/demo3/6.jpg' alt='护肤'/>
+				
+				</li>
+				<li class='list4'>
+					<div class='bor-B1 clearfix' style='height:178px;'>
+						<img class='fl-L bor-R1' width='199' src='images/demo3/7.jpg' alt='护肤' style='height:178px;'/>
+						<img class='fl-L' width='200' src='images/demo3/8.jpg' alt='护肤'/>
+					</div>
+					<img style='height:321px;' src='images/demo3/9.jpg' alt='护肤'/>
+				
+				</li>
+			</ul>
+		
+		</div>
+	</body>
+</html>
